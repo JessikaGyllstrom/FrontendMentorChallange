@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*, 
+*::after, 
+*::before {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+:root {
+    --intro-email-bg: hsl(217, 28%, 15%);
+    --main-bg: hsl(218, 28%, 13%);
+    --footer-bg: hsl(216, 53%, 9%);
+    --testimonials-bg: hsl(219, 30%, 18%);
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background: var(--main-bg);
+    color: var(--white);
+}
+h2, h3, nav, .cta {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+h2 {
+    font-size: 40px;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 80px;
+    background: var(--intro-email-bg);
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-items :not(:last-child) {
+    padding-right: 55px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--intro-email-bg) url("/images/bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 270px;
+    text-align: center;
+}
+.hero img {
+    width: 740;
+    height: 530;
+}
+.hero h2 {
+    width: 740px;
+    margin: 45px;
+}
+.hero p{
+    width: 740px;
+    font-size: 22px;
+    padding: 0 30px;
+}
+.cta {
+    width: 280px;
+    padding: 20px 0;
+    border-radius: 50px;
+    margin: 30px 0;
+    background: linear-gradient(to right, var(--cyan), var(--blue));
+}
+.features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px 150px;
+    margin: 130px 0;
+    padding: 0 280px;
+}
+.feature {
+    text-align: center;
+}
